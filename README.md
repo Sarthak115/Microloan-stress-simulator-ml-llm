@@ -1,179 +1,100 @@
-📘 Loan Stress Simulator (ML + LLM + Fintech Dashboard)
+# 🚀 Loan Stress Simulator (ML + LLM + Fintech Dashboard)
 
-A Machine Learning & Gemini-LMM powered tool for loan repayment analysis, default risk prediction, and personalized financial advisory.
+A fintech-focused loan analysis tool that simulates repayment behavior, predicts borrower default risk using Machine Learning, and generates personalized financial advisory reports using Google Gemini 2.0 LLM.  
+Includes an interactive Streamlit dashboard with visual analytics and downloadable PDF reports.
 
-🚀 Project Overview
+---
 
-This project simulates loan repayment behavior, predicts borrower default risk, and generates personalized AI-driven financial advice.
-It combines:
+## 📌 Features
 
-Financial simulation models
+### 🔹 Loan Simulation Engine
+- EMI amortization using financial formulas  
+- Month-wise loan balance tracking  
+- Late fee modeling and behavior-based repayment patterns  
+- Supports On-Time, Late, Minimum-Only, and Mixed repayment behaviours  
 
-Machine Learning risk scoring
+---
 
-Google Gemini 2.0 LLM financial advisory
+### 🔹 ML Default Risk Prediction
+Predicts the probability of default using a Random Forest model trained on synthetic borrower data with features such as:
+- Income  
+- EMI-to-Income ratio  
+- APR (Interest Rate)  
+- Late payment frequency  
 
-Interactive Streamlit dashboard
+---
 
-PDF report generation
+### 🔹 Gemini LLM Financial Advisor
+Generates a clean, structured, professional advisory containing:
+- Risk Assessment  
+- Behavioural Insights  
+- Personalized Repayment Recommendations  
+- Actionable 3–4 step strategy  
 
-Useful for fintech analytics, risk modelling, BFSI applications, loan affordability assessment, and borrower behavior study.
+LLM output is strictly text-only (PDF safe, no emojis, no markdown).
 
-🧠 Key Features
-🔹 Loan Simulation Engine
+---
 
-EMI calculation using amortization formula
+### 🔹 Streamlit Dashboard
+- Interactive form-based input  
+- Dynamic progress animations  
+- EMI/income stress indicators  
+- Loan balance visualization  
+- ML probability display  
+- Professional PDF export with:
+  - User profile  
+  - Simulation summary  
+  - ML risk score  
+  - AI advisory  
+  - Balance chart  
 
-Month-wise balance tracking
+---
 
-Late fee modeling
+## 🛠️ Tech Stack
 
-Interest accumulation
+| Component       | Technology |
+|-----------------|------------|
+| Frontend UI     | Streamlit  |
+| ML Model        | Random Forest (scikit-learn) |
+| AI Advisor      | Gemini 2.0 Flash |
+| Simulation      | Python financial modelling |
+| Visualization   | Matplotlib |
+| PDF Report      | FPDF |
+| Data Handling   | Pandas, NumPy |
 
-Dynamic behaviour modes:
+---
 
-On-Time
-
-Always Late
-
-Minimum-Only
-
-Mixed Behaviour
-
-🔹 ML-Based Default Risk Prediction
-
-Predicts probability of loan default using:
-
-Income
-
-EMI-to-Income ratio
-
-Late frequency
-
-APR
-
-Built using Random Forest Classifier on synthetic borrower dataset.
-
-🔹 AI Financial Advisory (Gemini LLM)
-
-The system generates:
-
-Risk Assessment
-
-Behavioural Insights
-
-Personalized Recommendations
-
-Actionable Repayment Plan
-
-The LLM output is clean, structured, and PDF-compatible.
-
-🔹 Interactive Streamlit Dashboard
-
-Dynamic progress animations
-
-Loan balance line chart
-
-Key financial metrics
-
-Clean UI with sliders, inputs, and explanation sections
-
-Behavioural insight badges
-
-🔹 PDF Report Export
-
-Generates a professional, multi-page financial report containing:
-
-User profile
-
-Simulation summary
-
-ML risk assessment
-
-AI advisory
-
-Loan balance chart
-
-📂 Tech Stack
-Component	Technology
-Frontend UI	Streamlit
-ML Model	Random Forest (scikit-learn)
-AI Advisor	Gemini 2.0 Flash
-PDF Reports	FPDF
-Visualizations	Matplotlib
-Data Processing	NumPy, Pandas
-Backend Logic	Python
-🧮 How It Works (Architecture)
+## 📐 System Architecture
 User Input Form
-       ↓
+↓
 Loan Simulation Engine
-       ↓
+↓
 Feature Engineering (EMI ratio, late freq, APR)
-       ↓
-ML Default Risk Predictor (Random Forest)
-       ↓
-LLM Financial Advisor (Gemini 2.0)
-       ↓
-Dashboard Visualizations + PDF Report
+↓
+ML Risk Model (Random Forest)
+↓
+Gemini LLM Financial Advisor
+↓
+Dashboard + Charts + PDF Report
 
-🖥️ Running the Project
-1. Install Dependencies
+
+
+
+---
+
+## 🖥️ Running the Project
+
+### 1️⃣ Install Dependencies
+```bash
 pip install streamlit google-genai scikit-learn pandas numpy matplotlib fpdf
 
-2. Run Streamlit App
+
 streamlit run app.py
+If running on Google Colab, use ngrok to expose the Streamlit app
 
 
-If running on Google Colab, use ngrok for public URL.
+👤 Author
 
-📊 Screenshots (Optional)
+Sarthak Kumar
+Email: sarthakkumarr2003@gmail.com
 
-(You can add images later here)
-
-📄 PDF Report Example
-
-Includes:
-
-Financial summary
-
-EMI breakdown
-
-ML default probability
-
-Clean advisory text
-
-Loan balance chart
-
-🌟 Key Skills Demonstrated
-
-✔ Machine Learning (Random Forest)
-✔ LLM Integration (Gemini)
-✔ Financial Modeling
-✔ Data Visualization
-✔ Streamlit Development
-✔ PDF Reporting
-✔ Fintech Risk Analytics
-✔ Behavioral Data Simulation
-
-🧩 Future Enhancements
-
-Multi-loan comparison
-
-Loan Stress Index (LSI) scoring
-
-XGBoost / LightGBM models
-
-Income-shock stress test
-
-API integration with real credit products
-
-Cloud deployment (Render / GCP / Streamlit Cloud)
-
-🤝 Contributions
-
-Open to issues and pull requests.
-
-📧 Contact
-
-Created by Sarthak Kumar
-For queries: sarthakkumarr2003@gmail.com
