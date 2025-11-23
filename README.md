@@ -49,6 +49,41 @@ LLM output is strictly text-only (PDF safe, no emojis, no markdown).
   - Balance chart  
 
 ---
+## 🧩 Background: Why This Project Matters
+
+In recent years, a large number of students and young professionals in India have turned to 
+instant micro-loan apps such as Slice, KreditBee, Dhani, Kissht, and several BNPL platforms. 
+While these apps provide quick credit without traditional paperwork, they often come with:
+
+- High APRs disguised as "zero-cost" loans  
+- Hidden late fees and rollover penalties  
+- Minimum-payment traps that extend loan duration  
+- Aggressive repayment reminders  
+- Lack of financial awareness among first-time borrowers  
+
+Many students end up paying far more than the original loan amount due to:
+
+- Late payments while managing college or internship schedules  
+- Paying only minimum dues  
+- Frequent rollovers  
+- Snowballing interest + penalties  
+
+This project addresses these challenges by providing:
+
+- A **transparent loan simulation** to show the true cost over time  
+- An **ML-based default risk score** to identify high-risk scenarios early  
+- An **LLM-powered financial advisor** to guide borrowers on safer repayment strategies  
+- A **PDF financial report** that explains everything clearly  
+
+The goal is to help young borrowers understand:
+- How quickly debt grows  
+- How behaviour (late/minimum payments) impacts long-term cost  
+- How to avoid debt traps  
+- How to choose the safest repayment strategy  
+
+This project combines fintech analytics, machine learning, and AI reasoning 
+to promote **financial awareness and responsible borrowing**.
+
 
 ## 🛠️ Tech Stack
 
